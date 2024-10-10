@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* css for body of the webpage */
+body {
+    padding-top: 150px;
+    background: url('loginbg4.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* place the background behind the content */
+    background-attachment: fixed;
+    /* keep the background fixed */
+    text-align: center;
+}
+
+/* transparent overlay */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* semi-transparent black */
+    z-index: -1;
+}
+
+/* navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname {
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span {
+    color: #20413A;
+}
+
+header .icons i {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+body {
+    padding-top: 125px;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/* navbar ends */
+
+
+/* filter buttons */
+.filter-container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 9px 20px;
+    font-size: 15px;
+    background: #fff;
+    color: #20413A;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-buttons button.active {
+    background: rgb(214, 214, 214);
+    color: #20413A;
+}
+
+/* filter buttons ends */
+
+
+/* menu items */
+h1 {
+    font-size: 2.5rem;
+}
+
+.menu-categories h2 {
+    font-size: 2rem;
+}
+
+.box-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box-container .menu-item {
+    flex: 1 1 10rem;
+    padding: 7.5px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.box-container .menu-item .product {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.box-container .menu-item .product img {
+    height: 22.5rem;
+    width: 17.5rem;
+    object-fit: cover;
+}
+
+.box-container .menu-item .item-details {
+    padding: 1rem;
+    text-align: center;
+}
+
+.box-container .menu-item .item-details .item-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.box-container .menu-item .item-details .price {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.box-container .menu-item .item-details .description {
+    font-size: 1rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.box-container .menu-item .cart-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.box-container .menu-item .quantity-controls {
+    padding-bottom: 1rem;
+}
+
+.decrement,
+.increment,
+.add-to-cart {
+    padding: 0.5rem 1rem;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+}
+
+.quantity {
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+/* menu items ends */

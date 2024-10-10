@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname {
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span {
+    color: #20413A;
+}
+
+header .icons i {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+body {
+    padding-top: 125px;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/* navbar ends */
+
+/* home section */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    /* ensure the section is positioned relatively */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('homebg.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* place the background behind the content */
+}
+
+/* transparent overlay */
+.background::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 250, 250, 0.6);
+    /* semi-transparent black */
+    z-index: -1;
+}
+
+.home .content {
+    max-width: 50rem;
+    z-index: 1;
+    /* ensure the content is above the background */
+    position: relative;
+    /* ensure the content is positioned relatively */
+}
+
+.home .content h1 {
+    font-size: 5.8rem;
+    color: black;
+}
+
+.home .content span {
+    font-size: 3rem;
+    color: black;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+/* home section ends */
+
+/* best-sellers */
+.best-sellers{
+    padding: 5rem 9%;
+}
+
+.best-sellers .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.best-sellers .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.best-sellers .box-container .box {
+    flex: 1 1 20rem;
+    position: relative;
+}
+
+.best-sellers .box-container .box .product {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.best-sellers .box-container .box .product img {
+    height: 23rem;
+    max-width: 20rem;
+    object-fit: cover;
+}
+
+.best-sellers .box-container .box:hover .product img {
+    transform: scale(1.1);
+}
+
+.best-sellers .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.best-sellers .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.best-sellers .box-container .box .content p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+/* best-sellers ends */
+
+/* review section */
+.review {
+    padding: 5rem 9%;
+    background-color: #69432b;
+}
+
+.review .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.review .slide {
+    height: 175px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    position: relative;
+    background-color: white;
+}
+
+.review .slide .fas.fa-quote-right {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+
+.review .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review .slide .user h3 {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slide .user i {
+    font-size: 1.3rem;
+    color: #20413A;
+}
+
+.review .slide p {
+    font-size: 1rem;
+    line-height: 1;
+    /*spacing between lines*/
+    color: grey;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* review section ends */
+
+/* about section */
+.about {
+    padding: 5rem 9%;
+}
+
+.about .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    padding-bottom: 3rem;
+}
+
+.about .photos {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.about .photo {
+    flex: 1 1 20rem;
+
+    position: relative;
+}
+
+.about .photo img {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.about .about-text{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.about .about-text p{
+    font-size: 1.1rem;
+}
+/* about section ends */

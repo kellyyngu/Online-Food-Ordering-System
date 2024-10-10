@@ -1,0 +1,131 @@
+/* CSS for the body of the webpage, includes background setup with fixed positioning */
+body 
+{
+    padding-top: 30px;
+    background: url('loginbg2.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* places the background behind the content */
+    background-attachment: fixed; /* keeps the background fixed during scroll */
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    z-index: -1; 
+}
+
+/* CSS for the main container */
+.container {
+    max-width: 800px; 
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ebdbdb;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for headings */
+h1, h2 
+{
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: white;
+}
+
+/* CSS for the table container  */
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* CSS for table cells */
+th, td 
+{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* CSS for table headers */
+th 
+{
+    background-color: #E9C5C5;
+    color: #000000;
+    text-align: center;
+}
+
+/* CSS for zebra striping to differentiate even and odd rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) 
+{
+    background-color: #e4cfcf;
+}
+
+/* CSS for link buttons */
+a {
+    display: inline-block;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #444;
+}
+
+/* CSS for button container */
+.button-container 
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CSS for back navigation */
+.back, h2 
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CSS for displaying order details  */
+.order-details 
+{
+    width: 25%; 
+    margin: 0 auto;
+    background-color: #E9C5C5;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* CSS for bold text */
+.bold-text {
+    font-weight: bold;
+}

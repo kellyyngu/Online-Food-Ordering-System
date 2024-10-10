@@ -1,0 +1,62 @@
+/* CSS for body of the webpage */
+body 
+{
+    background-image: url('loginbg2.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color:white;
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: -1; 
+}
+
+
+/* css for header title */
+h1 
+{
+    text-align: center;
+    margin-top: 0px; 
+    margin-bottom: 30px;
+}
+
+
+/* css for back button */
+#back 
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#back a 
+{
+    display: inline-block;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#back a:hover {
+    background-color: #444;
+}

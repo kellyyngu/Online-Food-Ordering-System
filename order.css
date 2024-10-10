@@ -1,0 +1,109 @@
+/* css for body of the webpage */
+body 
+{
+    padding-top: 150px;
+    background: url('loginbg4.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place the background behind the content */
+    background-attachment: fixed; /* Keep the background fixed */
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: -1; 
+}
+
+/* css for top navigation bar */
+header   
+{
+    position: fixed; /* fix the header position */
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname 
+{  
+    font-size: 2.5rem; 
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span 
+{
+    color: #20413A;
+}
+
+header .icons i /* set icon size */
+{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+
+/* css for order page header */
+#header
+{
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size:50px;
+    margin: 10px auto;
+    font-weight: bolder;
+}
+
+
+/* css for register and login para */
+#registerpara,
+#loginpara
+{
+    font-size: 130%;
+    margin: 10px auto;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+/* css for 'register' and 'login' button */
+#submit
+{
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 10%;
+    margin: 10px auto;
+}
+
+#submit:hover 
+{
+    background-color: #444;
+}
+
+
+/* CSS to reset margin for all elements */
+*
+{
+    margin:0;
+}
+

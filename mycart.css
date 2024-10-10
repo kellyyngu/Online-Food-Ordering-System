@@ -1,0 +1,167 @@
+/* css for body of the webpage */
+body 
+{
+    padding-top: 150px;
+    background: url('loginbg4.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place the background behind the content */
+    background-attachment: fixed; /* Keep the background fixed */
+    text-align: center;
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: -1; 
+}
+
+/* CSS for top navigation bar */
+header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname 
+{
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span 
+{
+    color: #20413A;
+}
+
+header .icons i 
+{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+
+/* CSS for mycart page header */
+#header
+{
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+    font-size:40px;
+}
+
+
+/* CSS for table */
+table 
+{
+    width: 80%;
+    margin: 20px auto; /* Set left and right margins to auto */
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS for table header and data cells */
+th, td 
+{
+    padding: 12px; 
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #d5c6c6;
+    border-left: 1px solid #784545;
+}
+
+
+/* CSS for table header */
+th 
+{
+    background-color: #E9C5C5;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* CSS for even rows in the table */
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2; 
+}
+
+
+/* CSS for odd rows in the table */
+tr:nth-child(odd) 
+{
+    background-color: #e4cfcf;
+}
+
+
+/* CSS for checkout button */
+#button1
+{
+    background-color: #adabab;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* CSS for checkout button hover effect */
+#button1:hover
+{
+    background-color: #444;
+}
+
+
+/* CSS for anchor tag */
+a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* CSS to reset margin for all elements */
+*
+{
+    margin:0;
+}
+
+/* CSS for pop up message */
+.popup-message 
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; 
+}

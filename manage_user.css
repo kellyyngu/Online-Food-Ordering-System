@@ -1,0 +1,160 @@
+/* CSS for body of the webpage */
+body 
+{
+    padding-top: 150px;
+    background: url('loginbg2.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* place the background behind the content */
+    background-attachment: fixed; /* keep the background fixed during scroll */
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
+    z-index: -1; 
+}
+
+/* CSS for top navigation bar */
+header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname 
+{
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span 
+{
+    color: #20413A;
+}
+
+header .icons i 
+{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+/* CSS for the container, defining dimensions, background, and shadow */
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(233, 182, 229);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS for manage user page header */
+h1
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* CSS for tables */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+
+/* CSS for table header and data cells */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* CSS for table headers */
+th {
+    background-color: #E9C5C5;
+    color: #000000;
+    font-weight: bold; /* make table headings bold */
+    text-align: center;
+}
+
+/* CSS for even rows in the table  */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* CSS for odd rows in the table */
+tr:nth-child(odd) 
+{
+    background-color: #efdede;
+}
+
+/* CSS for form elements, defining inline display for horizontal layout */
+form {
+    display: inline;
+}
+
+/* CSS for text input fields  */
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/* CSS for submit buttons  */
+button[type="submit"] {
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS for hover effect on submit buttons  */
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* CSS for fixed messages, setting position, padding, and color */
+#delete_message,
+#password-change-message
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-weight: bold;
+    color: red;
+}

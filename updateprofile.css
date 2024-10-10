@@ -1,0 +1,109 @@
+/* css for body of the webpage */
+body 
+{
+    padding-top: 150px;
+    background: url('loginbg4.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place the background behind the content */
+    background-attachment: fixed; /* Keep the background fixed */
+    text-align: center;
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: -1; 
+}
+/* CSS for top navigation bar */
+header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname 
+{
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span 
+{
+    color: #20413A;
+}
+
+header .icons i 
+{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+
+/* CSS for update profile form */
+.form-container {
+    margin-top: 100px;
+    width: 25%;
+    background-color: #ebdbdb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 70px auto; 
+    text-align: center; 
+}
+
+/* CSS for update profile form header */
+#header {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* CSS for all the inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* CSS for 'Update' button */
+button[type="submit"] {
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* CSS to reset margin for all elements */
+* {
+    margin:0;
+}

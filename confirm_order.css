@@ -1,0 +1,154 @@
+/* CSS for body of the webpage */
+body 
+{
+    padding-top: 100px;
+    background: url('loginbg4.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+
+/* CSS for top navigation bar */
+header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname 
+{
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}  
+
+header .shopname span 
+{
+    color: #20413A;
+}
+
+/* CSS for order confirmation page header */
+.order-heading 
+{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+
+/* CSS for order confirmation content */
+.confirm-container 
+{
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f7dcdc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS for table */
+table 
+{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+
+/* CSS for table header and data cells */
+th, td 
+{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+
+/* CSS for table header */
+th 
+{
+    background-color: #e2aeae;
+    color: #fff;
+    font-weight: bold; 
+    text-align: center;
+}
+
+
+/* CSS for even rows in the table */
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+
+/* CSS for button container */
+.button-container 
+{
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+/* CSS for 'back to menu' and 'logout' buttons */
+#button1, 
+#button2 
+{
+    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* Link styling for buttons */
+#button1 a, 
+#button2 a 
+{
+    display: inline-block;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 10px auto;
+}
+
+
+/* CSS for 'back to menu' and 'logout' buttons hover effects */
+#button1 a:hover,
+#button2 a:hover
+{
+    background-color: #444;
+}
+
+
+/* CSS for thank you msg */
+.thank-you-message 
+{
+    color:#ec5790;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}

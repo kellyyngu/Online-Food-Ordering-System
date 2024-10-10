@@ -1,0 +1,236 @@
+/* css for body of the webpage */
+body 
+{
+    position: relative; 
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+#background 
+{
+    background-image: url('loginbg4.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the background stays behind other content */
+}
+
+/* transparent overlay */
+body::after 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: -1; /* place the overlay behind the content */
+}
+
+
+/* CSS for top navigation bar */
+header 
+{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname 
+{
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span 
+{
+    color: #20413A;
+}
+
+header .icons i 
+{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+
+/* CSS for checkout page header */
+#header
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/* CSS for table */
+table 
+{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto;
+}
+
+
+/* CSS for table header and data cells */
+th, td 
+{
+    padding: 12px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+
+/* CSS for table header */
+th 
+{
+    background-color: #E9C5C5;
+    color: #000000;
+    text-align:center;
+}
+
+
+/* CSS for even rows in the table */
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2; 
+}
+
+
+/* CSS for odd rows in the table */
+tr:nth-child(odd) 
+{
+    background-color: #e4cfcf;
+}
+
+
+/* CSS for customer details and payment methods container */
+.checkout-container, 
+.checkout-container2 
+{
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #E9C5C5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS for customer details form */
+form 
+{
+    text-align: left;
+}
+
+form input[type="text"],
+form textarea 
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* CSS for anchor tag */
+a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* CSS for 'place order'' button */
+#confirm 
+{
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* CSS for 'place order'' button hover effect */
+#confirm:hover 
+{
+    background-color: #444;
+}
+
+
+/* CSS for Enter Card Details block */
+#cd_header
+{
+    color: black;
+}
+
+
+#card_details 
+{
+    display: none; 
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e5d4d4;
+    width: 40%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#card_details label 
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#card_details input[type="text"] 
+{
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#card_details input[type="text"]:focus 
+{
+    outline: none;
+    border-color: #4CAF50;
+}
+
+
+/* CSS to reset margin for all elements */
+* {
+    margin: 0;
+}

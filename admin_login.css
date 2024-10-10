@@ -1,0 +1,98 @@
+/* CSS for body of the webpage */
+body {
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+    background: url('loginbg2.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* CSS for top navigation bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .shopname {
+    font-size: 2.5rem;
+    color: #20413A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .shopname span {
+    color: #20413A;
+}
+
+/* CSS for admin login header */
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* CSS for edit menu form */
+.form-container {
+    max-width: 500px;
+    background-color: #ebdbdb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    text-align: center;
+}
+
+#form {
+    text-align: center;
+}
+
+#form h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* CSS for 'update' button */
+button[type="submit"] {
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
